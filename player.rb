@@ -17,14 +17,14 @@ class Player
       my_symbols << idx + 1 if @shape == cell.symbol
     end
     wins = [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-      [1, 4, 7],
-      [4, 5, 6],
-      [3, 6, 9],
-      [1, 5, 9],
-      [3, 5, 7]
+      [1, 2, 3], # Horizontal
+      [4, 5, 6], # 
+      [7, 8, 9], #
+      [1, 4, 7], # Vertical
+      [4, 5, 6], # 
+      [3, 6, 9], # 
+      [1, 5, 9], # Diagonal
+      [3, 5, 7]  #  
     ]
 
     wins.each do |win|
