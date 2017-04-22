@@ -35,7 +35,19 @@ class Game
           break
         end
       end
+      if Game.draw?
+        puts "Game Over\nDRAW!"
+        break
+      end
     end
+  end
+
+  def self.draw?
+    draw = true
+    Board.cells.flatten.each do |cell|
+      draw = false if (1..9).to_a.include? cell.symbol
+    end
+    return draw
   end
 
   def self.ask_for_input player_name
