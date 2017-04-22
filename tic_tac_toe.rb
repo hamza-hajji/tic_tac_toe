@@ -1,6 +1,6 @@
 
 
 
-require "game.rb"
+require "./game.rb"
 
 Game.start_game

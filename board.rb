@@ -1,5 +1,5 @@
 class Board
-  Cell = Stuct.new :symbol
+  Cell = Struct.new :symbol
   @@cells = []
 
   def self.initialize_board
